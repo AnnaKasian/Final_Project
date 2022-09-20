@@ -130,3 +130,42 @@ p {
     text-align: center;
   }
 }
+.logo {
+  display: block;
+  padding: 0 0 0 20px;
+  max-width: 90px;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 10px;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 60px;
+  margin-left: 15px;
+  font-size: 22px;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  padding: 10px 0 0 0;
+}
+nav a {
+  text-decoration: none;
+  color: #272142;
+  transition: all 100ms ease-in-out;
+}
+nav a:hover,
+nav li.active a {
+  color: var(--branding-color);
+}
+@media (max-width: 900px) {
+  .logo {
+    max-width: 0;
+  }
+  nav li {
+    font-size: 18px;
+  }
+}
